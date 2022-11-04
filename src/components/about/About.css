@@ -1,0 +1,16 @@
+#about {
+  background-color: black;
+  margin-top: 0%;
+}
+.about_me {
+  height: 50vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+}
+.image {
+  border-radius: 50px;
+  height: 50vh;
+  width: 40vh;
+}

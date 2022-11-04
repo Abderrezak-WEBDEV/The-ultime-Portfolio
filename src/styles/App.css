@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;600 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-bg: #191919;
+  --color-bg-variant: #2f2f2f;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(142, 181, 209, 0.4);
+  --color-white: rgba(255, 255, 255, 0.983);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-larg: 75%;
+  --container-width-med: 85%;
+  --container-width-ms: 90%;
+  --transition: all 400ms ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+  /* supprimer la barre de defilement */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
+}
+/*============style générale==========*/
+.container {
+  width: var(--container-width-larg);
+  margin: 0 auto; /*====pour positionner au millieu et horizentalement===*/
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  /* les composants de chaque page seront dans des section*/
+  margin-top: 10rem;
+  height: 100vh;
+}
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+.text-light {
+  color: var(--color-bg-variant);
+  font-size: 1.5rem;
+}
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--color-white);
+}
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  background-color: var(--color-white);
+}
+.btn :hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/*=========MEDIA QUERIES (MEDIUM DEVISES)======*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-med);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+/*=========MEDIA QUERIES (SMALL DEVISES)======*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-ms);
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
