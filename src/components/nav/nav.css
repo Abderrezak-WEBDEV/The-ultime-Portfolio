@@ -10,7 +10,7 @@ nav {
   display: flex;
   gap: 0.8rem;
   font-size: 30px;
-  border-radius: 3em;
+  border-radius: 5px;
   backdrop-filter: blur(15px);
   flex-direction: column;
   padding: 0;

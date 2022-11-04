@@ -1,16 +1,67 @@
 #about {
-  background-color: black;
-  margin-top: 0%;
+  background: black;
+  margin: 0%;
+  height: 110vh;
+  padding-top: 10vh;
 }
+/*==========Bloc 1=======*/
 .about_me {
-  height: 50vh;
-  display: grid;
+  height: 45vh;
+  display: flex;
   gap: 20px;
-  grid-template-columns: 30% 70%;
   justify-content: center;
 }
+.about-container {
+  margin-top: 0%;
+}
+.btn-primary {
+  color: white;
+  margin-left: 72vh;
+}
+
 .image {
-  border-radius: 50px;
-  height: 50vh;
-  width: 40vh;
+  border-radius: 10px;
+  height: 45vh;
+  width: 35vh;
+  overflow: hidden;
+  transform: rotate(10deg);
+  margin-left: 15%;
+}
+.image:hover {
+  transform: none;
+}
+
+.about_descrp {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 20px;
+  text-align: center;
+}
+/*==========Bloc 2=======*/
+.about_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: -10vh;
+}
+.about_card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  text-align: center;
+}
+.about_card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+.about_icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.about_card h5 {
+  font-size: large;
+  color: var(--color-primary);
 }

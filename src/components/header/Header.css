@@ -1,8 +1,8 @@
 header {
-  height: 150vh;
+  height: 120vh;
   padding-top: 7rem;
   overflow: hidden;
-  background-image: url("https://images.pexels.com/photos/1297611/pexels-photo-1297611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_960_720.jpg");
   background-size: cover;
 }
 .header_container {
@@ -17,7 +17,7 @@ header {
   gap: 1.2rem;
   justify-content: center;
 }
-/* =====réseaux sociaux===== */
+/* =====réseaux sociaux=====*/
 .header_socials {
   display: flex;
   flex-direction: column;
@@ -35,6 +35,10 @@ header {
   font-size: 1.5rem;
   transform: rotate(90deg);
   font-weight: 900;
+}
+.text-light {
+  color: var(--color-primary);
+  font-size: 2rem;
 }
 .header_socials::after {
   content: "";

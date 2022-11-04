@@ -1,0 +1,18 @@
+#experience {
+  height: 120vh;
+  width: 100%;
+  margin-top: 0;
+  background: black;
+  padding-top: 10vh;
+}
+
+.about_card h5 {
+  font-size: large;
+  color: var(--color-primary);
+}
+.abou_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 10vh;
+}
