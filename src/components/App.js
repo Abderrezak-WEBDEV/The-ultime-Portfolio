@@ -5,6 +5,7 @@ import Experience from "./experience/Experience";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import Nav from "./nav/Nav";
+import Projet from "./projet/Projet";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <About />
       <Experience />
+      <Projet />
       <Contact />
       <Footer />
     </>

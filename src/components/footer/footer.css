@@ -1,0 +1,8 @@
+.main-footer {
+  text-align: center;
+  color: var(--color-primary);
+  border-top: 3px solid var(--color-primary);
+}
+footer {
+  height: 50px;
+}
