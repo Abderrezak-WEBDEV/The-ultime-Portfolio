@@ -38,23 +38,9 @@ nav a.active {
 }
 
 /*========Media screen small====*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   nav {
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
-    border-radius: 15px;
-    width: 20%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: stretch;
-    padding: 80px 0 30px 0;
-    margin: 0;
+    padding-top: 5rem;
   }
   #logo {
     color: #fff;

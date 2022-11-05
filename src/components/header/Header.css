@@ -61,16 +61,24 @@ header {
 /*=========MEDIA QUERIES (MEDIUM DEVISES)======*/
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    padding-top: 2rem;
+    height: auto;
+  }
+  .btn-primary {
+    margin-right: 100vh;
   }
 }
 /*=========MEDIA QUERIES (SMALL DEVISES)======*/
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 200vh;
+    margin-bottom: 100px;
   }
   .header_socials,
   .scroll_down {
     display: none;
+  }
+  .btn-primary {
+    background: red;
   }
 }

@@ -17,7 +17,7 @@ const About = () => {
               respectant un cahier de charge, charte graphique. Je suis
               disponible pour tous nouveaux challange.
             </p>
-            <a href="#contact" value="contact" className="btn btn-primary">
+            <a href="#contact" value="contact" className="btn">
               Contactez-moi !
             </a>
           </div>

@@ -1,11 +1,10 @@
 #experience {
-  height: 120vh;
+  height: 70vh;
   width: 100%;
   margin-top: 0;
   background: black;
   padding-top: 10vh;
 }
-
 .about_card h5 {
   font-size: large;
   color: var(--color-primary);
@@ -18,13 +17,14 @@
 }
 /*========Media screen small====*/
 @media screen and (max-width: 1024px) {
-  .abou_content {
-    width: 100%;
-    height: 150vh;
-    padding: 2rem;
-    margin: 0 auto;
+  #experience {
+    padding-top: 100vh;
+    background: black;
   }
-  .about_card {
+  .about_icon {
+    text-align: center;
+  }
+  .abou_content {
     display: flex;
     flex-direction: column;
   }
