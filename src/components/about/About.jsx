@@ -1,5 +1,6 @@
 import React from "react";
 import "../about/About.css";
+import cv from "../../assets/CV_Akel.pdf";
 import ME from "../../assets/Photo.jpg";
 import { FaSignLanguage } from "react-icons/fa";
 import { SiSkillshare } from "react-icons/si";
@@ -17,8 +18,8 @@ const About = () => {
               respectant un cahier de charge, charte graphique. Je suis
               disponible pour tous nouveaux challange.
             </p>
-            <a href="#contact" value="contact" className="btn">
-              Contactez-moi !
+            <a href={cv} download value="cv" id="cv-btn" className="btn">
+              Download CV
             </a>
           </div>
         </div>
