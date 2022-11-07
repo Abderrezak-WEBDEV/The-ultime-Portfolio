@@ -15,6 +15,10 @@ const Contacts = () => {
     e.preventDefault();
 
     emailjs
+      //  tapez la commande 'npm install emailjs-com --save'
+      // allez sur emailjs React
+      //   information a recuperé sur emailjs
+
       .sendForm(
         "service_i4wd92t",
         "template_dpxw26g",
