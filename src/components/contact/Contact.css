@@ -52,3 +52,8 @@ input[type="submit"]:hover {
 .contact_container h2 {
   color: var(--color-primary);
 }
+#scroll {
+  font-size: 2rem;
+  margin-left: 90%;
+  margin-bottom: 60%;
+}

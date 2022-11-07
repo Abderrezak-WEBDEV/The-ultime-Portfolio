@@ -3,7 +3,6 @@
   height: auto;
   margin-top: 0px;
 }
-
 .projet_item {
   background: var(--color-bg-variant);
   padding: 1rem;
@@ -23,6 +22,7 @@
 .projet_item h3 {
   color: var(--color-primary-variant);
 }
+
 @media screen and (max-width: 1024px) {
   #projet {
     padding-top: 300vh;

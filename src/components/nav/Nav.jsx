@@ -1,7 +1,6 @@
 import React from "react";
 import { HiHome } from "react-icons/hi";
 import { BiBook } from "react-icons/bi";
-import { MdContactMail } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaUniversity } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
@@ -50,14 +49,6 @@ const Nav = () => {
             target="blank"
           >
             <BiBook />
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setActiveNav("#contact")}
-            className={activeNav === "#contact" ? "active" : ""}
-            target="blank"
-          >
-            <MdContactMail />
           </a>
         </div>
       </nav>

@@ -18,10 +18,6 @@ const Projet = () => {
     <section id="projet">
       <h5>Revue de site Web </h5>
       <h2>projets Web & Experiences professionnelles</h2>
-      <a href="#home" className="scroll_down">
-        Scroll down
-      </a>
-
       <Swiper
         className="container projets-container"
         modules={[Navigation, Pagination]}

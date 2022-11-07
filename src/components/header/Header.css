@@ -30,12 +30,14 @@ header {
 }
 .scroll_down {
   position: absolute;
+  height: 50px;
   right: -2.3rem;
   bottom: 5rem;
   font-size: 1.5rem;
   transform: rotate(90deg);
   font-weight: 900;
 }
+
 .text-light {
   color: var(--color-primary);
   font-size: 2rem;
