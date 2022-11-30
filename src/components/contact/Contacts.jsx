@@ -88,7 +88,7 @@ const Contacts = () => {
             name="message"
             rows="7"
             cols="50"
-            maxlength="400"
+          
             placeholder="Votre message"
           ></textarea>
           <button type="submit" className="btn btn_pimary">

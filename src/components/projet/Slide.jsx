@@ -1,5 +1,7 @@
 import React from "react";
-
+import Im from "../../assets/folio1.png";
+import In from "../../assets/folio2.png";
+import Io from "../../assets/folio3.png";
 import "../contact/Contact.css";
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -27,24 +29,15 @@ const Contact = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img
-          src="https://cdn.pixabay.com/photo/2014/12/29/15/36/business-582912__340.jpg"
-          alt="slide1"
-        />
+        <img src={Im} alt="slide1" />
       </SwiperSlide>
       <SwiperSlide>
         {" "}
-        <img
-          src="https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521__340.jpg"
-          alt="slide1"
-        />
+        <img src={Io} alt="slide1" />
       </SwiperSlide>
       <SwiperSlide>
         {" "}
-        <img
-          src="https://cdn.pixabay.com/photo/2019/07/14/16/29/pen-4337524_960_720.jpg"
-          alt="slide1"
-        />
+        <img src={In} alt="slide1" />
       </SwiperSlide>
     </Swiper>
   );

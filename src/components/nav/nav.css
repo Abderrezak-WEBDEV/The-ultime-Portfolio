@@ -1,20 +1,18 @@
 nav {
-  background: none;
-  height: 50vh;
-  display: block;
+  background: transparent;
+  height: 80vh;
   z-index: 2;
   position: fixed;
   left: 0%;
   transform: translateX(10%);
-  bottom: 15rem;
+  bottom: 15vh;
   display: flex;
+  flex-direction: column;
   gap: 0.8rem;
   font-size: 30px;
   border-radius: 5px;
   backdrop-filter: blur(15px);
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+  
 }
 #logo {
   margin-top: 30%;
@@ -36,12 +34,18 @@ nav a.active {
   background: transparent;
   color: var(--color-white);
 }
+.nav-burger {
+  width: 40px;
+  height: 40px;
+  background: transparent ;
+  border:none;
+  color: inherit;
+  display: none;
+}
 
 /*========Media screen small====*/
 @media screen and (max-width: 1024px) {
-  nav {
-    padding-top: 5rem;
-  }
+
   #logo {
     color: #fff;
     margin-top: 0%;
@@ -53,14 +57,43 @@ nav a.active {
     transform: none;
     text-align: center;
   }
-  .main-nav {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2.5rem;
-    margin-top: 0.5rem;
+ 
+  .nav-burger{
+    display: block;
+    position: fixed;
+    top:1rem;
+    right:1rem;
   }
+  .nav-burger:hover{
+    cursor: pointer;
+  }
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after{
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    
+  }
+  .burger-bar::before,
+  .burger-bar::after{
+    content:"";
+    position: absolute;
+    left: 0;
+  }
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+  .burger-bar::after{
+    transform: translateY(12px);
+  }
+
 }
-@media screen and (max-width: 1024px) {
+
+/* @media screen and (max-width: 800px) {
   nav {
     position: absolute;
     transform: rotate(90deg);
@@ -73,4 +106,4 @@ nav a.active {
   #logo {
     display: none;
   }
-}
+} */

@@ -7,7 +7,7 @@ import Im from "../../assets/Photo.jpg";
 import { Pagination, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Slide from "./Slide";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,7 +28,7 @@ const Projet = () => {
       >
         <SwiperSlide className="projet_item">
           <div className="avatar">
-            <img src={Im} alt="" className="projet_img"></img>
+            <Slide />
             <h3 className="ent-name">The Ultime Portfolio (Octobre 2022)</h3>
             <small className="ent_review">
               Ce site est mon portfolio, Codé en HTML , CSS et Reactjs.une revue
@@ -47,7 +47,7 @@ const Projet = () => {
         </SwiperSlide>
         <SwiperSlide className="projet_item">
           <div className="avatar">
-            <img src={Im} alt="" className="projet_img" />
+            <Slide />
             <h3 className="ent-name">stage (2mois) (Juillet- Aout 2022)</h3>
             <small className="ent_review">
               Réalisation d'un plugin WordPress qui permet de télécharger un

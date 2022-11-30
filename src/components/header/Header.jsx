@@ -1,7 +1,7 @@
 import React from "react";
-
 import Scroll from "./Scroll";
 import "../header/Header.css";
+import  Meteo from "../Api/Meteo"
 const Header = () => {
   return (
     <header>
@@ -13,6 +13,7 @@ const Header = () => {
         <a href="#contact" className="scroll_down">
           Scroll down
         </a>
+        <Meteo />
       </div>
     </header>
   );

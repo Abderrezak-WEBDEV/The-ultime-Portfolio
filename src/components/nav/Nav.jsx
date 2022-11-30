@@ -8,9 +8,13 @@ import "../nav/nav.css";
 import { useState } from "react";
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+  const [showlinks, setShowLinks] = useState(false)
+  const handleShowlinks = () => {
+    setShowLinks(!showlinks)
+  }
   return (
     <div>
-      <nav>
+      <nav className="show_nav">
         <div id="logo">
           <a href="header" target="blank" id="logo">
             <FaLaptopCode />
@@ -50,6 +54,9 @@ const Nav = () => {
           >
             <BiBook />
           </a>
+          <button className="nav-burger" onClick={handleShowlinks}>
+             <span  className="burger-bar"></span>
+          </button>
         </div>
       </nav>
     </div>
