@@ -10,8 +10,8 @@ import Projet from "./projet/Projet";
 function App() {
   return (
     <>
+      <Nav/>
       <Header />
-      <Nav />
       <About />
       <Experience />
       <Projet />
