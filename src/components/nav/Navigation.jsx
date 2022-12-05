@@ -1,30 +1,21 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-// le Navlink remplace Href A sur d'autres langages
+import { MenuData } from "./MenuData";
+import "../nav/nav.css";
 const Navigation = () => {
   return (
-    <div className="navigation">
-      <ul>
-        <NavLink
-          to="/home"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>Acceuil</li>
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>A propos</li>
-        </NavLink>
-        <NavLink
-          to="/projets"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>Mes Projets</li>
-        </NavLink>
-      </ul>
-    </div>
+    <ul className="nav-menu">
+    {MenuData.map((item, index) => {
+      return (
+        <li key={index}>
+          <a href={item.url} className={item.cName}>
+            <i className={item.icon}></i>
+            {item.title}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+    
   );
 };
 
