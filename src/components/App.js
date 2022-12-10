@@ -1,5 +1,5 @@
 import "../styles/App.css";
-import About from "./about/About";
+ import About from "./about/About";
 import Contacts from "./contact/Contacts";
 import Experience from "./experience/Experience";
 import Footer from "./footer/Footer";
@@ -12,7 +12,7 @@ function App() {
     <>
       <Nav/>
       <Header />
-      <About />
+      <About></About>
       <Experience />
       <Projet />
       <Contacts />
